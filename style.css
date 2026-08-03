@@ -29,7 +29,6 @@ padding-top:55px;
    PROFESSIONAL MOVING BANNER
 ===================================== */
 
-
 .support-banner{
 
 width:100%;
@@ -64,7 +63,7 @@ font-weight:600;
 
 color:#fff;
 
-background:#198754;
+background:#2F7D3B;
 
 border-radius:30px;
 
@@ -83,7 +82,6 @@ box-shadow:0 3px 10px rgba(0,0,0,.15);
 animation-play-state:paused;
 
 }
-
 
 
 @keyframes scrollText{
