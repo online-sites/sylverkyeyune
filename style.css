@@ -118,10 +118,10 @@ nav a:hover {
     background: #fff;
     max-width: 1200px;
     margin: auto;
-    padding: 65px 40px;
+    padding: 55px 40px;
     display: flex;
     align-items: center;
-    gap: 55px;
+    gap: 50px;
 }
 
 .hero-content {
@@ -132,17 +132,19 @@ nav a:hover {
 
 /* =====================================
    EYEBROW
+   DARK GREEN + BOLD
 ===================================== */
 
-.eyebrow {
-    color: #8fbc8f !important;
+.hero-content .eyebrow {
+    color: #2F7D3B !important;
     font-weight: 900 !important;
     font-style: normal !important;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     font-size: 16px;
-    line-height: 1.4;
-    margin: 0 0 8px 0 !important;
+    line-height: 1.2;
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
 }
 
 
@@ -153,35 +155,39 @@ nav a:hover {
 .hero h1 {
     font-size: 46px;
     color: #003366;
-    margin: 0 0 5px 0;
-    line-height: 1.15;
+    line-height: 1.1;
+    margin: 0 0 4px 0 !important;
+    padding: 0 !important;
 }
 
 
 /* =====================================
-   POSITION
+   DIRECTOR RISK
 ===================================== */
 
 .hero h2 {
     font-size: 24px;
     color: #0070C0;
-    margin: 0 0 2px 0 !important;
-    line-height: 1.25;
+    line-height: 1.15;
+    margin: 0 0 1px 0 !important;
+    padding: 0 !important;
 }
 
 
 /* =====================================
    PROFESSIONAL CREDENTIALS
+   LIGHT GREEN + BOLD ITALIC
 ===================================== */
 
-.hero .hero-credentials {
+.hero-content .hero-credentials {
     color: #8fbc8f !important;
     font-weight: 700 !important;
     font-style: italic !important;
     font-size: 16px;
-    line-height: 1.45;
-    max-width: 700px;
-    margin: 0 0 18px 0 !important;
+    line-height: 1.3;
+    max-width: 750px;
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
 }
 
 .hero-credentials span {
@@ -195,9 +201,10 @@ nav a:hover {
 
 .hero-content > p:not(.eyebrow):not(.hero-credentials) {
     font-size: 16px;
-    line-height: 1.65;
+    line-height: 1.5;
     max-width: 650px;
-    margin: 0 0 18px 0;
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
 }
 
 
@@ -208,8 +215,8 @@ nav a:hover {
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 8px;
+    gap: 10px;
+    margin-top: 6px;
 }
 
 .hero-buttons a {
@@ -257,22 +264,35 @@ nav a:hover {
 ===================================== */
 
 section {
-    padding: 35px 8%;
+    padding: 22px 8% !important;
 }
 
 section h2 {
     text-align: center;
     color: #003366;
-    margin-bottom: 18px;
-    font-size: 32px;
-}
-
-section[id] {
-    scroll-margin-top: 120px;
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 0 0 12px 0 !important;
+    padding: 0 !important;
 }
 
 section p {
-    line-height: 1.6;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+section[id] {
+    scroll-margin-top: 115px;
+}
+
+
+/* =====================================
+   REMOVE EXTRA HTML BREAK SPACING
+===================================== */
+
+section br {
+    display: none;
 }
 
 
@@ -282,45 +302,47 @@ section p {
 
 .card {
     background: #fff;
-    padding: 20px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    padding: 16px 20px !important;
+    margin: 0 0 8px 0 !important;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
 }
 
 .card h3 {
     color: #0070C0;
-    margin-bottom: 8px;
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
 }
 
 .card h4 {
     color: #003366;
     font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 8px;
+    margin: 8px 0 5px 0 !important;
+    padding: 0 !important;
 }
 
 .card p {
-    line-height: 1.6;
+    line-height: 1.5;
     color: #555;
     max-width: 900px;
-    margin-bottom: 8px;
+    margin: 0 0 5px 0 !important;
+    padding: 0 !important;
 }
 
 .card ul {
-    margin-top: 8px;
+    margin: 5px 0 0 0 !important;
     padding-left: 22px;
 }
 
 .card li {
-    margin-bottom: 6px;
-    line-height: 1.5;
+    margin-bottom: 4px;
+    line-height: 1.4;
 }
 
 
@@ -331,50 +353,58 @@ section p {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
+    gap: 10px !important;
 }
 
 .skill {
     background: #003366;
     color: #fff;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 16px 20px !important;
+    border-radius: 10px;
     text-align: left;
     transition: 0.3s;
 }
 
 .skill:hover {
     background: #0070C0;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .skill h3 {
-    margin-bottom: 12px;
+    margin: 0 0 8px 0 !important;
+    padding: 0 !important;
     font-size: 20px;
 }
 
 .skill p {
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .skill ul {
-    margin: 0;
+    margin: 0 !important;
     padding-left: 20px;
 }
 
 .skill li {
-    margin-bottom: 6px;
-    line-height: 1.5;
+    margin-bottom: 4px !important;
+    line-height: 1.4;
 }
 
 
 /* =====================================
-   EXPERTISE & CREDENTIALS
+   EXPERTISE & CREDENTIALS SECTIONS
 ===================================== */
+
+#expertise,
+#credentials {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
 
 #expertise > h2,
 #credentials > h2 {
     text-align: center;
+    margin-bottom: 12px !important;
 }
 
 #expertise .skill,
@@ -389,16 +419,44 @@ section p {
 
 #expertise .skill ul,
 #credentials .skill ul {
-    margin: 0;
+    margin: 0 !important;
     padding-left: 20px;
     text-align: left;
 }
 
 #expertise .skill li,
 #credentials .skill li {
-    margin-bottom: 6px;
-    line-height: 1.5;
+    margin-bottom: 4px !important;
+    line-height: 1.4;
     text-align: left;
+}
+
+
+/* =====================================
+   EXPERIENCE
+===================================== */
+
+#experience {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
+#experience > h2 {
+    margin-bottom: 12px !important;
+}
+
+
+/* =====================================
+   ACHIEVEMENTS
+===================================== */
+
+#achievements {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
+#achievements > h2 {
+    margin-bottom: 12px !important;
 }
 
 
@@ -406,41 +464,23 @@ section p {
    PROFESSIONAL SNAPSHOT
 ===================================== */
 
+#snapshot {
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
 #snapshot .skill {
     text-align: center;
 }
 
 
 /* =====================================
-   CONTACT SECTION
-===================================== */
-
-#contact {
-    text-align: center;
-}
-
-#contact p {
-    margin-bottom: 12px;
-}
-
-#contact a {
-    color: #0070C0;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-
-/* =====================================
-   EXPERIENCE ENGAGEMENT PHOTO
+   ENGAGEMENT PHOTO
 ===================================== */
 
 .engagement-photo {
     text-align: center;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .engagement-photo img {
@@ -456,12 +496,38 @@ section p {
     font-size: 14px;
     font-weight: 600;
     color: #444;
-    margin-top: 8px;
-    line-height: 1.5;
+    margin-top: 6px;
+    line-height: 1.4;
 }
 
 .engagement-title {
-    margin-top: 20px;
+    margin-top: 12px !important;
+}
+
+
+/* =====================================
+   CONTACT
+===================================== */
+
+#contact {
+    text-align: center;
+    padding-top: 22px !important;
+    padding-bottom: 22px !important;
+}
+
+#contact p {
+    margin: 0 0 8px 0 !important;
+    line-height: 1.5;
+}
+
+#contact a {
+    color: #0070C0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 
@@ -473,12 +539,12 @@ footer {
     background: #003366;
     color: #fff;
     text-align: center;
-    padding: 22px;
+    padding: 20px;
     font-size: 15px;
 }
 
 footer p {
-    margin-bottom: 6px;
+    margin: 0;
     line-height: 1.5;
 }
 
@@ -578,7 +644,6 @@ footer p {
         padding-left: 0;
         text-align: left;
     }
-
 }
 
 
@@ -593,7 +658,7 @@ footer p {
     }
 
     .hero {
-        padding: 55px 5%;
+        padding: 50px 5%;
         gap: 35px;
     }
 
@@ -609,12 +674,11 @@ footer p {
         width: 240px;
         height: 290px;
     }
-
 }
 
 
 /* =====================================
-   MOBILE RESPONSIVE DESIGN
+   MOBILE
 ===================================== */
 
 @media (max-width: 768px) {
@@ -636,7 +700,7 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
     }
 
     .logo a {
@@ -649,8 +713,8 @@ footer p {
     .hero {
         flex-direction: column-reverse;
         text-align: left;
-        padding: 45px 20px;
-        gap: 28px;
+        padding: 40px 20px;
+        gap: 25px;
     }
 
     .hero-content,
@@ -670,21 +734,21 @@ footer p {
     }
 
     .hero .eyebrow {
-        color: #8fbc8f !important;
+        color: #2F7D3B !important;
         font-size: 14px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.2px;
         font-weight: 900 !important;
         text-align: left;
+        margin-bottom: 5px !important;
     }
 
     .hero .hero-credentials {
         color: #8fbc8f !important;
         font-size: 15px;
-        line-height: 1.55;
+        line-height: 1.45;
         font-weight: 700 !important;
         font-style: italic !important;
-        margin-top: 0 !important;
-        margin-bottom: 18px !important;
+        margin: 0 0 12px 0 !important;
         text-align: left;
     }
 
@@ -697,6 +761,7 @@ footer p {
 
     .hero-buttons {
         justify-content: center;
+        gap: 8px;
     }
 
     .hero-buttons a {
@@ -716,12 +781,12 @@ footer p {
     /* MOBILE SECTIONS */
 
     section {
-        padding: 30px 20px;
+        padding: 20px 20px !important;
     }
 
     section h2 {
-        font-size: 28px;
-        margin-bottom: 18px;
+        font-size: 27px;
+        margin-bottom: 10px !important;
     }
 
 
@@ -729,19 +794,19 @@ footer p {
 
     .skills-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 8px !important;
     }
 
     .skill {
-        padding: 20px;
+        padding: 15px 18px !important;
     }
 
 
     /* MOBILE CARDS */
 
     .card {
-        padding: 18px;
-        margin-bottom: 10px;
+        padding: 15px 18px !important;
+        margin-bottom: 7px !important;
     }
 
 
@@ -763,23 +828,23 @@ footer p {
     }
 
 
-    /* MOBILE ENGAGEMENT IMAGE */
+    /* MOBILE IMAGE */
 
     .engagement-photo img {
         width: 100%;
     }
-
 }
 
 
 /* =====================================
-   SMALL MOBILE DEVICES
+   SMALL MOBILE
 ===================================== */
 
 @media (max-width: 480px) {
 
     .hero {
-        padding: 40px 18px;
+        padding: 35px 18px;
+        gap: 20px;
     }
 
     .hero h1 {
@@ -791,7 +856,7 @@ footer p {
     }
 
     .hero .eyebrow {
-        color: #8fbc8f !important;
+        color: #2F7D3B !important;
         font-size: 13px;
         letter-spacing: 1px;
         font-weight: 900 !important;
@@ -800,9 +865,10 @@ footer p {
     .hero .hero-credentials {
         color: #8fbc8f !important;
         font-size: 14px;
-        line-height: 1.55;
+        line-height: 1.45;
         font-weight: 700 !important;
         font-style: italic !important;
+        margin-bottom: 10px !important;
     }
 
     .hero p {
@@ -811,7 +877,7 @@ footer p {
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
 
     .profile img {
@@ -827,6 +893,14 @@ footer p {
         font-size: 16px;
     }
 
+    section {
+        padding: 18px 16px !important;
+    }
+
+    section h2 {
+        font-size: 25px;
+        margin-bottom: 9px !important;
+    }
 }
 
 
@@ -845,39 +919,34 @@ footer p {
 
 /* =====================================
    FINAL EYEBROW
+   DARK GREEN
 ===================================== */
 
 .hero-content .eyebrow {
-    color: #8fbc8f !important;
+    color: #2F7D3B !important;
     font-weight: 900 !important;
     font-style: normal !important;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-top: 0 !important;
-    margin-bottom: 8px !important;
 }
 
 
 /* =====================================
-   FINAL PROFESSIONAL CREDENTIALS
+   FINAL CREDENTIALS
+   LIGHT GREEN
 ===================================== */
 
 .hero-content .hero-credentials {
     color: #8fbc8f !important;
     font-weight: 700 !important;
     font-style: italic !important;
-    margin-top: 0 !important;
-    margin-bottom: 18px !important;
-    line-height: 1.45;
 }
 
 
 /* =====================================
-   DIRECTOR RISK SPACING
+   DIRECTOR RISK CLOSE TO CREDENTIALS
 ===================================== */
 
 .hero-content h2 {
-    margin-bottom: 2px !important;
+    margin-bottom: 1px !important;
 }
 
 
@@ -908,5 +977,4 @@ a:focus {
     * {
         transition: none !important;
     }
-
 }
