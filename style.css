@@ -118,10 +118,10 @@ nav a:hover {
     background: #fff;
     max-width: 1200px;
     margin: auto;
-    padding: 80px 40px;
+    padding: 65px 40px;
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 55px;
 }
 
 .hero-content {
@@ -130,63 +130,74 @@ nav a:hover {
 }
 
 
-/* EYEBROW */
+/* =====================================
+   EYEBROW
+===================================== */
 
 .eyebrow {
-    color: #8fbc8f;
-    font-weight: 900;
-    font-style: normal;
+    color: #8fbc8f !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 0 0 10px 0 !important;
     font-size: 16px;
+    line-height: 1.4;
+    margin: 0 0 8px 0 !important;
 }
 
 
-/* NAME */
+/* =====================================
+   NAME
+===================================== */
 
 .hero h1 {
     font-size: 46px;
     color: #003366;
-    margin: 0 0 6px 0;
+    margin: 0 0 5px 0;
     line-height: 1.15;
 }
 
 
-/* POSITION */
+/* =====================================
+   POSITION
+===================================== */
 
 .hero h2 {
     font-size: 24px;
     color: #0070C0;
-    margin: 0 0 3px 0;
-    line-height: 1.3;
+    margin: 0 0 2px 0 !important;
+    line-height: 1.25;
 }
 
 
-/* PROFESSIONAL CREDENTIALS */
+/* =====================================
+   PROFESSIONAL CREDENTIALS
+===================================== */
 
 .hero .hero-credentials {
-    color: #8fbc8f;
-    font-weight: 700;
-    font-style: italic;
+    color: #8fbc8f !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
     font-size: 16px;
-    line-height: 1.5;
-    margin: 0 0 22px 0 !important;
-    max-width: 650px;
+    line-height: 1.45;
+    max-width: 700px;
+    margin: 0 0 18px 0 !important;
 }
 
 .hero-credentials span {
-    color: #8fbc8f;
+    color: #8fbc8f !important;
 }
 
 
-/* NORMAL HERO TEXT */
+/* =====================================
+   HERO DESCRIPTION
+===================================== */
 
 .hero-content > p:not(.eyebrow):not(.hero-credentials) {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.65;
     max-width: 650px;
-    margin: 0 0 30px 0;
+    margin: 0 0 18px 0;
 }
 
 
@@ -198,6 +209,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    margin-top: 8px;
 }
 
 .hero-buttons a {
@@ -245,27 +257,22 @@ nav a:hover {
 ===================================== */
 
 section {
-    padding: 60px 8%;
+    padding: 35px 8%;
 }
 
 section h2 {
     text-align: center;
     color: #003366;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     font-size: 32px;
 }
 
 section[id] {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 120px;
 }
 
-
-/* =====================================
-   GENERAL PARAGRAPHS
-===================================== */
-
 section p {
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 
@@ -275,44 +282,45 @@ section p {
 
 .card {
     background: #fff;
-    padding: 25px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 12px;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
 }
 
 .card h3 {
     color: #0070C0;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .card h4 {
     color: #003366;
     font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 8px;
 }
 
 .card p {
-    line-height: 1.7;
+    line-height: 1.6;
     color: #555;
     max-width: 900px;
+    margin-bottom: 8px;
 }
 
 .card ul {
-    margin-top: 10px;
+    margin-top: 8px;
     padding-left: 22px;
 }
 
 .card li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    margin-bottom: 6px;
+    line-height: 1.5;
 }
 
 
@@ -323,30 +331,30 @@ section p {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    gap: 14px;
 }
 
 .skill {
     background: #003366;
     color: #fff;
-    padding: 25px;
+    padding: 20px;
     border-radius: 12px;
-    text-align: center;
+    text-align: left;
     transition: 0.3s;
 }
 
 .skill:hover {
     background: #0070C0;
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
 .skill h3 {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-size: 20px;
 }
 
 .skill p {
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .skill ul {
@@ -355,8 +363,8 @@ section p {
 }
 
 .skill li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    margin-bottom: 6px;
+    line-height: 1.5;
 }
 
 
@@ -388,8 +396,8 @@ section p {
 
 #expertise .skill li,
 #credentials .skill li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    margin-bottom: 6px;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -412,7 +420,7 @@ section p {
 }
 
 #contact p {
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 }
 
 #contact a {
@@ -432,7 +440,7 @@ section p {
 
 .engagement-photo {
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 .engagement-photo img {
@@ -448,12 +456,12 @@ section p {
     font-size: 14px;
     font-weight: 600;
     color: #444;
-    margin-top: 10px;
+    margin-top: 8px;
     line-height: 1.5;
 }
 
 .engagement-title {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 
@@ -465,13 +473,13 @@ footer {
     background: #003366;
     color: #fff;
     text-align: center;
-    padding: 25px;
+    padding: 22px;
     font-size: 15px;
 }
 
 footer p {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    margin-bottom: 6px;
+    line-height: 1.5;
 }
 
 
@@ -585,7 +593,7 @@ footer p {
     }
 
     .hero {
-        padding: 60px 5%;
+        padding: 55px 5%;
         gap: 35px;
     }
 
@@ -641,8 +649,8 @@ footer p {
     .hero {
         flex-direction: column-reverse;
         text-align: left;
-        padding: 50px 20px;
-        gap: 30px;
+        padding: 45px 20px;
+        gap: 28px;
     }
 
     .hero-content,
@@ -662,16 +670,21 @@ footer p {
     }
 
     .hero .eyebrow {
+        color: #8fbc8f !important;
         font-size: 14px;
         letter-spacing: 1.5px;
+        font-weight: 900 !important;
         text-align: left;
     }
 
     .hero .hero-credentials {
+        color: #8fbc8f !important;
         font-size: 15px;
-        line-height: 1.6;
+        line-height: 1.55;
+        font-weight: 700 !important;
+        font-style: italic !important;
         margin-top: 0 !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 18px !important;
         text-align: left;
     }
 
@@ -700,25 +713,39 @@ footer p {
     }
 
 
-    /* SECTIONS */
+    /* MOBILE SECTIONS */
 
     section {
-        padding: 45px 20px;
+        padding: 30px 20px;
     }
 
     section h2 {
         font-size: 28px;
+        margin-bottom: 18px;
     }
 
 
-    /* SKILLS */
+    /* MOBILE SKILLS */
 
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .skill {
+        padding: 20px;
     }
 
 
-    /* BANNER */
+    /* MOBILE CARDS */
+
+    .card {
+        padding: 18px;
+        margin-bottom: 10px;
+    }
+
+
+    /* MOBILE BANNER */
 
     .support-banner p {
         font-size: 14px;
@@ -726,7 +753,7 @@ footer p {
     }
 
 
-    /* HOME BUTTON */
+    /* MOBILE HOME BUTTON */
 
     .home-button {
         right: 15px;
@@ -736,7 +763,7 @@ footer p {
     }
 
 
-    /* ENGAGEMENT IMAGE */
+    /* MOBILE ENGAGEMENT IMAGE */
 
     .engagement-photo img {
         width: 100%;
@@ -764,13 +791,18 @@ footer p {
     }
 
     .hero .eyebrow {
+        color: #8fbc8f !important;
         font-size: 13px;
         letter-spacing: 1px;
+        font-weight: 900 !important;
     }
 
     .hero .hero-credentials {
+        color: #8fbc8f !important;
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.55;
+        font-weight: 700 !important;
+        font-style: italic !important;
     }
 
     .hero p {
@@ -822,7 +854,7 @@ footer p {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 0 !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
 }
 
 
@@ -835,22 +867,22 @@ footer p {
     font-weight: 700 !important;
     font-style: italic !important;
     margin-top: 0 !important;
-    margin-bottom: 22px !important;
-    line-height: 1.5;
+    margin-bottom: 18px !important;
+    line-height: 1.45;
 }
 
 
 /* =====================================
-   FINAL DIRECTOR RISK SPACING
+   DIRECTOR RISK SPACING
 ===================================== */
 
 .hero-content h2 {
-    margin-bottom: 3px !important;
+    margin-bottom: 2px !important;
 }
 
 
 /* =====================================
-   ACCESSIBILITY / FOCUS
+   ACCESSIBILITY
 ===================================== */
 
 a:focus {
