@@ -187,7 +187,19 @@ color:#7ec8ff;
 /* =====================================
    HERO SECTION
 ===================================== */
+.eyebrow {
+    color: #8fbc8f;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
+.hero-credentials {
+    color: #8fbc8f;
+    font-weight: 700;
+    font-style: italic;
+}
 
 .hero{
 
