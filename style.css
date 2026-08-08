@@ -131,19 +131,19 @@ nav a:hover {
 
 
 /* =====================================
-   EYEBROW
-   DARK GREEN + BOLD
+   SENIOR FINANCIAL SERVICES PROFESSIONAL
+   DARK GREEN + LARGER + BOLD
 ===================================== */
 
 .hero-content .eyebrow {
     color: #2F7D3B !important;
     font-weight: 900 !important;
     font-style: normal !important;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
-    font-size: 16px;
-    line-height: 1.2;
-    margin: 0 0 5px 0 !important;
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 0 0 18px 0 !important;
     padding: 0 !important;
 }
 
@@ -156,7 +156,7 @@ nav a:hover {
     font-size: 46px;
     color: #003366;
     line-height: 1.1;
-    margin: 0 0 4px 0 !important;
+    margin: 0 0 5px 0 !important;
     padding: 0 !important;
 }
 
@@ -392,7 +392,7 @@ section br {
 
 
 /* =====================================
-   EXPERTISE & CREDENTIALS SECTIONS
+   EXPERTISE & CREDENTIALS
 ===================================== */
 
 #expertise,
@@ -723,6 +723,16 @@ footer p {
         text-align: left;
     }
 
+    .hero .eyebrow {
+        color: #2F7D3B !important;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        font-weight: 900 !important;
+        line-height: 1.3;
+        text-align: left;
+        margin-bottom: 15px !important;
+    }
+
     .hero h1 {
         font-size: 36px;
         text-align: left;
@@ -731,15 +741,6 @@ footer p {
     .hero h2 {
         font-size: 21px;
         text-align: left;
-    }
-
-    .hero .eyebrow {
-        color: #2F7D3B !important;
-        font-size: 14px;
-        letter-spacing: 1.2px;
-        font-weight: 900 !important;
-        text-align: left;
-        margin-bottom: 5px !important;
     }
 
     .hero .hero-credentials {
@@ -847,19 +848,21 @@ footer p {
         gap: 20px;
     }
 
+    .hero .eyebrow {
+        color: #2F7D3B !important;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 900 !important;
+        line-height: 1.3;
+        margin-bottom: 13px !important;
+    }
+
     .hero h1 {
         font-size: 30px;
     }
 
     .hero h2 {
         font-size: 18px;
-    }
-
-    .hero .eyebrow {
-        color: #2F7D3B !important;
-        font-size: 13px;
-        letter-spacing: 1px;
-        font-weight: 900 !important;
     }
 
     .hero .hero-credentials {
@@ -919,30 +922,34 @@ footer p {
 
 /* =====================================
    FINAL EYEBROW
-   DARK GREEN
 ===================================== */
 
 .hero-content .eyebrow {
     color: #2F7D3B !important;
     font-weight: 900 !important;
     font-style: normal !important;
+    font-size: 21px;
+    letter-spacing: 1.8px;
+    line-height: 1.3;
+    margin: 0 0 18px 0 !important;
 }
 
 
 /* =====================================
    FINAL CREDENTIALS
-   LIGHT GREEN
 ===================================== */
 
 .hero-content .hero-credentials {
     color: #8fbc8f !important;
     font-weight: 700 !important;
     font-style: italic !important;
+    line-height: 1.3;
+    margin: 0 0 12px 0 !important;
 }
 
 
 /* =====================================
-   DIRECTOR RISK CLOSE TO CREDENTIALS
+   DIRECTOR RISK
 ===================================== */
 
 .hero-content h2 {
