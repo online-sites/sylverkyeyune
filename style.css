@@ -1,988 +1,1121 @@
 /* =====================================
-   GLOBAL SETTINGS
+GLOBAL SETTINGS
 ===================================== */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+  }
 
 html {
-    scroll-behavior: smooth;
+scroll-behavior: smooth;
 }
 
 body {
-    background: #f7f9fc;
-    color: #333;
-    padding-top: 55px;
+background: #f7f9fc;
+color: #333;
+padding-top: 55px;
 }
 
-
 /* =====================================
-   PROFESSIONAL MOVING BANNER
+PROFESSIONAL MOVING BANNER
 ===================================== */
 
 .support-banner {
-    width: 100%;
-    height: 55px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(6px);
-    border-bottom: 1px solid #e5e5e5;
-    z-index: 9999;
+width: 100%;
+height: 55px;
+overflow: hidden;
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(6px);
+border-bottom: 1px solid #e5e5e5;
+z-index: 9999;
 }
 
 .support-banner p {
-    position: absolute;
-    white-space: nowrap;
-    margin: 0;
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    background: #2F7D3B;
-    border-radius: 30px;
-    line-height: 25px;
-    animation: scrollText 20s linear infinite;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+position: absolute;
+white-space: nowrap;
+margin: 0;
+padding: 10px 25px;
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+background: #2F7D3B;
+border-radius: 30px;
+line-height: 25px;
+animation: scrollText 20s linear infinite;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .support-banner:hover p {
-    animation-play-state: paused;
+animation-play-state: paused;
 }
 
 @keyframes scrollText {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
+from {
+transform: translateX(100%);
 }
 
+```
+to {
+    transform: translateX(-100%);
+}
+```
+
+}
 
 /* =====================================
-   NAVIGATION
+NAVIGATION
 ===================================== */
 
 nav {
-    background: #003366;
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 55px;
-    z-index: 999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+background: #003366;
+padding: 18px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 55px;
+z-index: 999;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .logo a {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
 }
 
 nav ul {
-    display: flex;
-    gap: 25px;
-    list-style: none;
+display: flex;
+gap: 25px;
+list-style: none;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-    font-weight: 500;
+color: #fff;
+text-decoration: none;
+transition: 0.3s;
+font-weight: 500;
 }
 
 nav a:hover {
-    color: #7ec8ff;
+color: #7ec8ff;
 }
 
-
 /* =====================================
-   HERO SECTION
+HERO SECTION
 ===================================== */
 
 .hero {
-    background: #fff;
-    max-width: 1200px;
-    margin: auto;
-    padding: 55px 40px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+background: #fff;
+max-width: 1200px;
+margin: auto;
+padding: 55px 40px;
+display: flex;
+align-items: center;
+gap: 50px;
 }
 
 .hero-content {
-    width: 65%;
-    text-align: left;
+width: 65%;
+text-align: left;
 }
 
-
 /* =====================================
-   SENIOR FINANCIAL SERVICES PROFESSIONAL
-   DARK GREEN + LARGER + BOLD
+SENIOR FINANCIAL SERVICES PROFESSIONAL
+DARK GREEN + LARGER + BOLD
 ===================================== */
 
 .hero-content .eyebrow {
-    color: #2F7D3B !important;
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 25px;
-    font-weight: 800 !important;
-    font-style: normal !important;
-    letter-spacing: 1.2px;
-    text-transform: none !important;
-    line-height: 1.3;
-    margin: 0 0 20px 0 !important;
-    padding: 0 !important;
+color: #2F7D3B !important;
+font-family: "Segoe UI", Arial, sans-serif !important;
+font-size: 25px;
+font-weight: 800 !important;
+font-style: normal !important;
+letter-spacing: 1.2px;
+text-transform: none !important;
+line-height: 1.3;
+margin: 0 0 20px 0 !important;
+padding: 0 !important;
 }
 
-
 /* =====================================
-   NAME
+NAME
 ===================================== */
 
 .hero h1 {
-    font-size: 46px;
-    color: #003366;
-    line-height: 1.1;
-    margin: 0 0 5px 0 !important;
-    padding: 0 !important;
+font-size: 46px;
+color: #003366;
+line-height: 1.1;
+margin: 0 0 5px 0 !important;
+padding: 0 !important;
 }
 
-
 /* =====================================
-   DIRECTOR RISK
+DIRECTOR RISK
 ===================================== */
 
 .hero h2 {
-    font-size: 24px;
-    color: #0070C0;
-    line-height: 1.15;
-    margin: 0 0 1px 0 !important;
-    padding: 0 !important;
+font-size: 24px;
+color: #0070C0;
+line-height: 1.15;
+margin: 0 0 1px 0 !important;
+padding: 0 !important;
 }
 
-
 /* =====================================
-   PROFESSIONAL CREDENTIALS
-   LIGHT GREEN + BOLD ITALIC
+PROFESSIONAL CREDENTIALS
+VERTICAL MOVING + LIGHT GREEN + BOLD ITALIC
 ===================================== */
 
 .hero-content .hero-credentials {
-    color: #8fbc8f !important;
-    font-weight: 700 !important;
-    font-style: italic !important;
-    font-size: 16px;
-    line-height: 1.3;
-    max-width: 750px;
-    margin: 0 0 12px 0 !important;
-    padding: 0 !important;
+position: relative;
+width: 100%;
+max-width: 750px;
+height: 28px;
+overflow: hidden;
+
+```
+color: #8fbc8f !important;
+font-weight: 700 !important;
+font-style: italic !important;
+
+font-size: 16px;
+line-height: 28px;
+
+margin: 0 0 12px 0 !important;
+padding: 0 !important;
+```
+
 }
 
-.hero-credentials span {
-    color: #8fbc8f !important;
+.hero-content .hero-credentials div {
+position: absolute;
+left: 0;
+top: 0;
+
+```
+width: 100%;
+height: 28px;
+
+color: #8fbc8f !important;
+
+transform: translateY(100%);
+opacity: 0;
+
+animation: verticalCredentialSlide 10s infinite;
+```
+
 }
 
+/* MBA */
+
+.hero-content .hero-credentials div:nth-child(1) {
+animation-delay: 0s;
+}
+
+/* CPA */
+
+.hero-content .hero-credentials div:nth-child(2) {
+animation-delay: 2s;
+}
+
+/* ISO 31000 */
+
+.hero-content .hero-credentials div:nth-child(3) {
+animation-delay: 4s;
+}
+
+/* Cyber Security */
+
+.hero-content .hero-credentials div:nth-child(4) {
+animation-delay: 6s;
+}
+
+/* Big Data */
+
+.hero-content .hero-credentials div:nth-child(5) {
+animation-delay: 8s;
+}
 
 /* =====================================
-   HERO DESCRIPTION
+VERTICAL CREDENTIAL ANIMATION
+===================================== */
+
+@keyframes verticalCredentialSlide {
+
+```
+0% {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+8% {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+18% {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+28% {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+100% {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+```
+
+}
+
+/* =====================================
+HERO DESCRIPTION
 ===================================== */
 
 .hero-content > p:not(.eyebrow):not(.hero-credentials) {
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 650px;
-    margin: 0 0 12px 0 !important;
-    padding: 0 !important;
+font-size: 16px;
+line-height: 1.5;
+max-width: 650px;
+margin: 0 0 12px 0 !important;
+padding: 0 !important;
 }
 
-
 /* =====================================
-   HERO BUTTONS
+HERO BUTTONS
 ===================================== */
 
 .hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 6px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 6px;
 }
 
 .hero-buttons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 25px;
-    background: #003366;
-    color: #fff;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 12px 25px;
+background: #003366;
+color: #fff;
+border-radius: 25px;
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
 }
 
 .hero-buttons a:hover {
-    background: #0070C0;
-    transform: translateY(-3px);
+background: #0070C0;
+transform: translateY(-3px);
 }
 
-
 /* =====================================
-   PROFILE IMAGE
+PROFILE IMAGE
 ===================================== */
 
 .profile {
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+width: 35%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .profile img {
-    width: 260px;
-    height: 320px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+width: 260px;
+height: 320px;
+border-radius: 50%;
+object-fit: cover;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* =====================================
-   GENERAL SECTIONS
+GENERAL SECTIONS
 ===================================== */
 
 section {
-    padding: 22px 8% !important;
+padding: 22px 8% !important;
 }
 
 section h2 {
-    text-align: center;
-    color: #003366;
-    font-size: 30px;
-    line-height: 1.2;
-    margin: 0 0 12px 0 !important;
-    padding: 0 !important;
+text-align: center;
+color: #003366;
+font-size: 30px;
+line-height: 1.2;
+margin: 0 0 12px 0 !important;
+padding: 0 !important;
 }
 
 section p {
-    line-height: 1.5;
-    margin-top: 0;
-    margin-bottom: 8px;
+line-height: 1.5;
+margin-top: 0;
+margin-bottom: 8px;
 }
 
 section[id] {
-    scroll-margin-top: 115px;
+scroll-margin-top: 115px;
 }
 
-
 /* =====================================
-   REMOVE EXTRA HTML BREAK SPACING
+REMOVE EXTRA HTML BREAK SPACING
 ===================================== */
 
 section br {
-    display: none;
+display: none;
 }
 
-
 /* =====================================
-   CARDS
+CARDS
 ===================================== */
 
 .card {
-    background: #fff;
-    padding: 16px 20px !important;
-    margin: 0 0 8px 0 !important;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
-    transition: 0.3s;
+background: #fff;
+padding: 16px 20px !important;
+margin: 0 0 8px 0 !important;
+border-radius: 10px;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+transform: translateY(-3px);
+box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
 }
 
 .card h3 {
-    color: #0070C0;
-    margin: 0 0 5px 0 !important;
-    padding: 0 !important;
+color: #0070C0;
+margin: 0 0 5px 0 !important;
+padding: 0 !important;
 }
 
 .card h4 {
-    color: #003366;
-    font-size: 16px;
-    margin: 8px 0 5px 0 !important;
-    padding: 0 !important;
+color: #003366;
+font-size: 16px;
+margin: 8px 0 5px 0 !important;
+padding: 0 !important;
 }
 
 .card p {
-    line-height: 1.5;
-    color: #555;
-    max-width: 900px;
-    margin: 0 0 5px 0 !important;
-    padding: 0 !important;
+line-height: 1.5;
+color: #555;
+max-width: 900px;
+margin: 0 0 5px 0 !important;
+padding: 0 !important;
 }
 
 .card ul {
-    margin: 5px 0 0 0 !important;
-    padding-left: 22px;
+margin: 5px 0 0 0 !important;
+padding-left: 22px;
 }
 
 .card li {
-    margin-bottom: 4px;
-    line-height: 1.4;
+margin-bottom: 4px;
+line-height: 1.4;
 }
 
-
 /* =====================================
-   SKILLS GRID
+SKILLS GRID
 ===================================== */
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 10px !important;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 10px !important;
 }
 
 .skill {
-    background: #003366;
-    color: #fff;
-    padding: 16px 20px !important;
-    border-radius: 10px;
-    text-align: left;
-    transition: 0.3s;
+background: #003366;
+color: #fff;
+padding: 16px 20px !important;
+border-radius: 10px;
+text-align: left;
+transition: 0.3s;
 }
 
 .skill:hover {
-    background: #0070C0;
-    transform: translateY(-3px);
+background: #0070C0;
+transform: translateY(-3px);
 }
 
 .skill h3 {
-    margin: 0 0 8px 0 !important;
-    padding: 0 !important;
-    font-size: 20px;
+margin: 0 0 8px 0 !important;
+padding: 0 !important;
+font-size: 20px;
 }
 
 .skill p {
-    line-height: 1.5;
+line-height: 1.5;
 }
 
 .skill ul {
-    margin: 0 !important;
-    padding-left: 20px;
+margin: 0 !important;
+padding-left: 20px;
 }
 
 .skill li {
-    margin-bottom: 4px !important;
-    line-height: 1.4;
+margin-bottom: 4px !important;
+line-height: 1.4;
 }
 
-
 /* =====================================
-   EXPERTISE & CREDENTIALS
+EXPERTISE & CREDENTIALS
 ===================================== */
 
 #expertise,
 #credentials {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
+padding-top: 22px !important;
+padding-bottom: 22px !important;
 }
 
 #expertise > h2,
 #credentials > h2 {
-    text-align: center;
-    margin-bottom: 12px !important;
+text-align: center;
+margin-bottom: 12px !important;
 }
 
 #expertise .skill,
 #credentials .skill {
-    text-align: left;
+text-align: left;
 }
 
 #expertise .skill h3,
 #credentials .skill h3 {
-    text-align: left;
+text-align: left;
 }
 
 #expertise .skill ul,
 #credentials .skill ul {
-    margin: 0 !important;
-    padding-left: 20px;
-    text-align: left;
+margin: 0 !important;
+padding-left: 20px;
+text-align: left;
 }
 
 #expertise .skill li,
 #credentials .skill li {
-    margin-bottom: 4px !important;
-    line-height: 1.4;
-    text-align: left;
+margin-bottom: 4px !important;
+line-height: 1.4;
+text-align: left;
 }
 
-
 /* =====================================
-   EXPERIENCE
+EXPERIENCE
 ===================================== */
 
 #experience {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
+padding-top: 22px !important;
+padding-bottom: 22px !important;
 }
 
 #experience > h2 {
-    margin-bottom: 12px !important;
+margin-bottom: 12px !important;
 }
 
-
 /* =====================================
-   ACHIEVEMENTS
+ACHIEVEMENTS
 ===================================== */
 
 #achievements {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
+padding-top: 22px !important;
+padding-bottom: 22px !important;
 }
 
 #achievements > h2 {
-    margin-bottom: 12px !important;
+margin-bottom: 12px !important;
 }
 
-
 /* =====================================
-   PROFESSIONAL SNAPSHOT
+PROFESSIONAL SNAPSHOT
 ===================================== */
 
 #snapshot {
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
+padding-top: 22px !important;
+padding-bottom: 22px !important;
 }
 
 #snapshot .skill {
-    text-align: center;
+text-align: center;
 }
 
-
 /* =====================================
-   ENGAGEMENT PHOTO
+ENGAGEMENT PHOTO
 ===================================== */
 
 .engagement-photo {
-    text-align: center;
-    margin: 15px 0;
+text-align: center;
+margin: 15px 0;
 }
 
 .engagement-photo img {
-    width: 55%;
-    max-width: 720px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+width: 55%;
+max-width: 720px;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .image-caption {
-    text-align: center;
-    font-size: 14px;
-    font-weight: 600;
-    color: #444;
-    margin-top: 6px;
-    line-height: 1.4;
+text-align: center;
+font-size: 14px;
+font-weight: 600;
+color: #444;
+margin-top: 6px;
+line-height: 1.4;
 }
 
 .engagement-title {
-    margin-top: 12px !important;
+margin-top: 12px !important;
 }
 
-
 /* =====================================
-   CONTACT
+CONTACT
 ===================================== */
 
 #contact {
-    text-align: center;
-    padding-top: 22px !important;
-    padding-bottom: 22px !important;
+text-align: center;
+padding-top: 22px !important;
+padding-bottom: 22px !important;
 }
 
 #contact p {
-    margin: 0 0 8px 0 !important;
-    line-height: 1.5;
+margin: 0 0 8px 0 !important;
+line-height: 1.5;
 }
 
 #contact a {
-    color: #0070C0;
-    text-decoration: none;
-    font-weight: 600;
+color: #0070C0;
+text-decoration: none;
+font-weight: 600;
 }
 
 #contact a:hover {
-    text-decoration: underline;
+text-decoration: underline;
 }
 
-
 /* =====================================
-   FOOTER
+FOOTER
 ===================================== */
 
 footer {
-    background: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 15px;
+background: #003366;
+color: #fff;
+text-align: center;
+padding: 20px;
+font-size: 15px;
 }
 
 footer p {
-    margin: 0;
-    line-height: 1.5;
+margin: 0;
+line-height: 1.5;
 }
 
-
 /* =====================================
-   FLOATING HOME BUTTON
+FLOATING HOME BUTTON
 ===================================== */
 
 .home-button {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    background: #003366;
-    color: #fff;
-    padding: 14px 22px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    z-index: 999;
-    transition: 0.3s;
+position: fixed;
+right: 25px;
+bottom: 25px;
+background: #003366;
+color: #fff;
+padding: 14px 22px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 600;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+z-index: 999;
+transition: 0.3s;
 }
 
 .home-button:hover {
-    background: #0070C0;
-    transform: translateY(-3px);
+background: #0070C0;
+transform: translateY(-3px);
 }
 
-
 /* =====================================
-   BACKUP HOME PAGE
+BACKUP HOME PAGE
 ===================================== */
 
 .home-page {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #f7f9fc;
-    padding: 30px;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: #f7f9fc;
+padding: 30px;
 }
 
 .home-page img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+width: 180px;
+height: 180px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 25px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .home-page h1 {
-    color: #003366;
-    font-size: 36px;
-    margin-bottom: 20px;
+color: #003366;
+font-size: 36px;
+margin-bottom: 20px;
 }
 
 .home-page p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 30px;
+font-size: 18px;
+color: #555;
+margin-bottom: 30px;
 }
 
 .home-page a {
-    background: #003366;
-    color: #fff;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+background: #003366;
+color: #fff;
+padding: 14px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
 }
 
 .home-page a:hover {
-    background: #0070C0;
+background: #0070C0;
 }
 
-
 /* =====================================
-   DESKTOP HERO ALIGNMENT
+DESKTOP HERO ALIGNMENT
 ===================================== */
 
 @media (min-width: 769px) {
 
-    .hero-content {
-        margin-left: 0;
-        padding-left: 0;
-        text-align: left;
-    }
-
-    .hero-content h1,
-    .hero-content h2,
-    .hero-content p {
-        margin-left: 0;
-        padding-left: 0;
-        text-align: left;
-    }
+```
+.hero-content {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
 }
 
+.hero-content h1,
+.hero-content h2,
+.hero-content p {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+```
+
+}
 
 /* =====================================
-   TABLET
+TABLET
 ===================================== */
 
 @media (max-width: 1024px) {
 
-    nav {
-        padding: 18px 5%;
-    }
-
-    .hero {
-        padding: 50px 5%;
-        gap: 35px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero h2 {
-        font-size: 22px;
-    }
-
-    .profile img {
-        width: 240px;
-        height: 290px;
-    }
+```
+nav {
+    padding: 18px 5%;
 }
 
+.hero {
+    padding: 50px 5%;
+    gap: 35px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero h2 {
+    font-size: 22px;
+}
+
+.profile img {
+    width: 240px;
+    height: 290px;
+}
+```
+
+}
 
 /* =====================================
-   MOBILE
+MOBILE
 ===================================== */
 
 @media (max-width: 768px) {
 
-    body {
-        padding-top: 55px;
-    }
-
-
-    /* MOBILE NAVIGATION */
-
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    .logo a {
-        font-size: 22px;
-    }
-
-
-    /* MOBILE HERO */
-
-    .hero {
-        flex-direction: column-reverse;
-        text-align: left;
-        padding: 40px 20px;
-        gap: 25px;
-    }
-
-    .hero-content,
-    .profile {
-        width: 100%;
-        text-align: left;
-    }
-
-    .hero .eyebrow {
-        color: #2F7D3B !important;
-        font-size: 18px;
-        letter-spacing: 1.2px;
-        font-weight: 900 !important;
-        line-height: 1.3;
-        text-align: left;
-        margin-bottom: 15px !important;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-        text-align: left;
-    }
-
-    .hero h2 {
-        font-size: 21px;
-        text-align: left;
-    }
-
-    .hero .hero-credentials {
-        color: #8fbc8f !important;
-        font-size: 15px;
-        line-height: 1.45;
-        font-weight: 700 !important;
-        font-style: italic !important;
-        margin: 0 0 12px 0 !important;
-        text-align: left;
-    }
-
-    .hero p {
-        text-align: left;
-    }
-
-
-    /* MOBILE BUTTONS */
-
-    .hero-buttons {
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .hero-buttons a {
-        width: 100%;
-        max-width: 280px;
-    }
-
-
-    /* MOBILE PROFILE */
-
-    .profile img {
-        width: 220px;
-        height: 220px;
-    }
-
-
-    /* MOBILE SECTIONS */
-
-    section {
-        padding: 20px 20px !important;
-    }
-
-    section h2 {
-        font-size: 27px;
-        margin-bottom: 10px !important;
-    }
-
-
-    /* MOBILE SKILLS */
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 8px !important;
-    }
-
-    .skill {
-        padding: 15px 18px !important;
-    }
-
-
-    /* MOBILE CARDS */
-
-    .card {
-        padding: 15px 18px !important;
-        margin-bottom: 7px !important;
-    }
-
-
-    /* MOBILE BANNER */
-
-    .support-banner p {
-        font-size: 14px;
-        padding: 8px 18px;
-    }
-
-
-    /* MOBILE HOME BUTTON */
-
-    .home-button {
-        right: 15px;
-        bottom: 15px;
-        padding: 12px 18px;
-        font-size: 14px;
-    }
-
-
-    /* MOBILE IMAGE */
-
-    .engagement-photo img {
-        width: 100%;
-    }
+```
+body {
+    padding-top: 55px;
 }
 
 
+/* MOBILE NAVIGATION */
+
+nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.logo a {
+    font-size: 22px;
+}
+
+
+/* MOBILE HERO */
+
+.hero {
+    flex-direction: column-reverse;
+    text-align: left;
+    padding: 40px 20px;
+    gap: 25px;
+}
+
+.hero-content,
+.profile {
+    width: 100%;
+    text-align: left;
+}
+
+.hero .eyebrow {
+    color: #2F7D3B !important;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-weight: 900 !important;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 15px !important;
+}
+
+.hero h1 {
+    font-size: 36px;
+    text-align: left;
+}
+
+.hero h2 {
+    font-size: 21px;
+    text-align: left;
+}
+
+.hero .hero-credentials {
+    height: 28px;
+    overflow: hidden;
+    color: #8fbc8f !important;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    margin: 0 0 12px 0 !important;
+    text-align: left;
+}
+
+.hero p {
+    text-align: left;
+}
+
+
+/* MOBILE BUTTONS */
+
+.hero-buttons {
+    justify-content: center;
+    gap: 8px;
+}
+
+.hero-buttons a {
+    width: 100%;
+    max-width: 280px;
+}
+
+
+/* MOBILE PROFILE */
+
+.profile img {
+    width: 220px;
+    height: 220px;
+}
+
+
+/* MOBILE SECTIONS */
+
+section {
+    padding: 20px 20px !important;
+}
+
+section h2 {
+    font-size: 27px;
+    margin-bottom: 10px !important;
+}
+
+
+/* MOBILE SKILLS */
+
+.skills-grid {
+    grid-template-columns: 1fr;
+    gap: 8px !important;
+}
+
+.skill {
+    padding: 15px 18px !important;
+}
+
+
+/* MOBILE CARDS */
+
+.card {
+    padding: 15px 18px !important;
+    margin-bottom: 7px !important;
+}
+
+
+/* MOBILE BANNER */
+
+.support-banner p {
+    font-size: 14px;
+    padding: 8px 18px;
+}
+
+
+/* MOBILE HOME BUTTON */
+
+.home-button {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px 18px;
+    font-size: 14px;
+}
+
+
+/* MOBILE IMAGE */
+
+.engagement-photo img {
+    width: 100%;
+}
+```
+
+}
+
 /* =====================================
-   SMALL MOBILE
+SMALL MOBILE
 ===================================== */
 
 @media (max-width: 480px) {
 
-    .hero {
-        padding: 35px 18px;
-        gap: 20px;
-    }
-
-    .hero .eyebrow {
-        color: #2F7D3B !important;
-        font-size: 16px;
-        letter-spacing: 1px;
-        font-weight: 900 !important;
-        line-height: 1.3;
-        margin-bottom: 13px !important;
-    }
-
-    .hero h1 {
-        font-size: 30px;
-    }
-
-    .hero h2 {
-        font-size: 18px;
-    }
-
-    .hero .hero-credentials {
-        color: #8fbc8f !important;
-        font-size: 14px;
-        line-height: 1.45;
-        font-weight: 700 !important;
-        font-style: italic !important;
-        margin-bottom: 10px !important;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .profile img {
-        width: 180px;
-        height: 180px;
-    }
-
-    .home-page h1 {
-        font-size: 28px;
-    }
-
-    .home-page p {
-        font-size: 16px;
-    }
-
-    section {
-        padding: 18px 16px !important;
-    }
-
-    section h2 {
-        font-size: 25px;
-        margin-bottom: 9px !important;
-    }
+```
+.hero {
+    padding: 35px 18px;
+    gap: 20px;
 }
 
+.hero .eyebrow {
+    color: #2F7D3B !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 900 !important;
+    line-height: 1.3;
+    margin-bottom: 13px !important;
+}
+
+.hero h1 {
+    font-size: 30px;
+}
+
+.hero h2 {
+    font-size: 18px;
+}
+
+.hero .hero-credentials {
+    height: 26px;
+    overflow: hidden;
+    color: #8fbc8f !important;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    margin-bottom: 10px !important;
+}
+
+.hero p {
+    font-size: 15px;
+}
+
+nav ul {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+}
+
+.home-page h1 {
+    font-size: 28px;
+}
+
+.home-page p {
+    font-size: 16px;
+}
+
+section {
+    padding: 18px 16px !important;
+}
+
+section h2 {
+    font-size: 25px;
+    margin-bottom: 9px !important;
+}
+```
+
+}
 
 /* =====================================
-   FINAL HERO TEXT ALIGNMENT
+FINAL HERO TEXT ALIGNMENT
 ===================================== */
 
 .hero-content h1,
 .hero-content h2,
 .hero-content p {
-    text-align: left !important;
-    margin-left: 0 !important;
-    padding-left: 0 !important;
+text-align: left !important;
+margin-left: 0 !important;
+padding-left: 0 !important;
 }
 
-
 /* =====================================
-   FINAL EYEBROW
+FINAL EYEBROW
 ===================================== */
 
 .hero-content .eyebrow {
-    color: #2F7D3B !important;
-    font-weight: 900 !important;
-    font-style: normal !important;
-    font-size: 21px;
-    letter-spacing: 1.8px;
-    line-height: 1.3;
-    margin: 0 0 18px 0 !important;
+color: #2F7D3B !important;
+font-weight: 900 !important;
+font-style: normal !important;
+font-size: 21px;
+letter-spacing: 1.8px;
+line-height: 1.3;
+margin: 0 0 18px 0 !important;
 }
 
-
 /* =====================================
-   FINAL CREDENTIALS
+FINAL CREDENTIALS
 ===================================== */
 
 .hero-content .hero-credentials {
-    color: #8fbc8f !important;
-    font-weight: 700 !important;
-    font-style: italic !important;
-    line-height: 1.3;
-    margin: 0 0 12px 0 !important;
+position: relative;
+width: 100%;
+max-width: 750px;
+height: 28px;
+overflow: hidden;
+
+```
+color: #8fbc8f !important;
+font-weight: 700 !important;
+font-style: italic !important;
+
+line-height: 28px;
+margin: 0 0 12px 0 !important;
+padding: 0 !important;
+```
+
 }
 
+.hero-content .hero-credentials div {
+position: absolute;
+left: 0;
+top: 0;
+
+```
+width: 100%;
+height: 28px;
+
+color: #8fbc8f !important;
+
+transform: translateY(100%);
+opacity: 0;
+
+animation: verticalCredentialSlide 10s infinite;
+```
+
+}
+
+.hero-content .hero-credentials div:nth-child(1) {
+animation-delay: 0s;
+}
+
+.hero-content .hero-credentials div:nth-child(2) {
+animation-delay: 2s;
+}
+
+.hero-content .hero-credentials div:nth-child(3) {
+animation-delay: 4s;
+}
+
+.hero-content .hero-credentials div:nth-child(4) {
+animation-delay: 6s;
+}
+
+.hero-content .hero-credentials div:nth-child(5) {
+animation-delay: 8s;
+}
 
 /* =====================================
-   DIRECTOR RISK
+DIRECTOR RISK
 ===================================== */
 
 .hero-content h2 {
-    margin-bottom: 1px !important;
+margin-bottom: 1px !important;
 }
 
-
 /* =====================================
-   ACCESSIBILITY
+ACCESSIBILITY
 ===================================== */
 
 a:focus {
-    outline: 2px solid #8fbc8f;
-    outline-offset: 3px;
+outline: 2px solid #8fbc8f;
+outline-offset: 3px;
 }
 
-
 /* =====================================
-   REDUCED MOTION
+REDUCED MOTION
 ===================================== */
 
 @media (prefers-reduced-motion: reduce) {
 
-    html {
-        scroll-behavior: auto;
-    }
+```
+html {
+    scroll-behavior: auto;
+}
 
-    .support-banner p {
-        animation: none;
-    }
+.support-banner p {
+    animation: none;
+}
 
-    * {
-        transition: none !important;
-    }
+.hero-content .hero-credentials div {
+    animation: none;
+}
+
+* {
+    transition: none !important;
+}
+```
+
 }
