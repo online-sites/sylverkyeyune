@@ -147,7 +147,11 @@
                 Value
             </a>
         </li>
-
+        <li>
+<a href="#gallery">
+Gallery
+</a>
+</li>
         <li>
             <a href="#contact">
                 Contact
@@ -1659,7 +1663,118 @@
 
 </section>
 
+<!-- GALLERY -->
 
+<section id="gallery">
+
+<h2>
+Gallery
+</h2>
+
+<p class="gallery-intro">
+A collection of professional engagements, leadership activities,
+industry events and memorable moments throughout my career.
+</p>
+
+<div class="gallery-slider">
+
+<div class="gallery-slide active">
+
+<img src="images/gallery/gallery1.jpg"
+alt="Sylver Kyeyune - Bank Event">
+
+<div class="gallery-caption">
+Annual Meeting of the Association of African Development Finance Institutions on the sidelines of the African Development Bank: Brazzaville [May 2026]
+</div>
+
+</div>
+
+<div class="gallery-slide">
+
+<img src="images/gallery/gallery2.jpg"
+alt="Sylver Kyeyune - Bank Event">
+
+<div class="gallery-caption">
+Presentations in the Annual Meeting of the Association of African Development Finance Institutions on the sidelines of the African Development Bank: Brazzaville [May 2026]
+</div>
+
+</div>
+
+<div class="gallery-slide">
+
+<img src="images/gallery/gallery3.jpg"
+alt="Sylver Kyeyune - Bank Event">
+
+<div class="gallery-caption">
+Posing for photo during the Annual Meeting of the Association of African Development Finance Institutions on the sidelines of the African Development Bank: Brazzaville [May 2026]
+</div>
+
+</div>
+
+<div class="gallery-slide">
+
+<img src="images/gallery/gallery4.jpg"
+alt="Sylver Kyeyune - Bank Event">
+
+<div class="gallery-caption">
+Members of the Taskforce reviewing the African Development Finance Institutions Prudential Standards, Guidelines and Rating System: Abidjan Corte D Voire [Aug 2026]
+</div>
+
+</div>
+
+<div class="gallery-slide">
+
+<img src="images/gallery/gallery5.jpg"
+alt="Sylver Kyeyune - Bank Event">
+
+<div class="gallery-caption">
+On a working tour of the AADFI Offices: Abidjan [Aug 2026]
+</div>
+
+</div>
+
+
+<button class="gallery-prev"
+onclick="changeSlide(-1)"
+aria-label="Previous photo">
+
+❮
+
+</button>
+
+<button class="gallery-next"
+onclick="changeSlide(1)"
+aria-label="Next photo">
+
+❯
+
+</button>
+
+</div>
+
+<div class="gallery-dots">
+
+<span class="gallery-dot active"
+onclick="showSlide(0)"></span>
+
+<span class="gallery-dot"
+onclick="showSlide(1)"></span>
+
+<span class="gallery-dot"
+onclick="showSlide(2)"></span>
+
+<span class="gallery-dot"
+onclick="showSlide(3)"></span>
+
+<span class="gallery-dot"
+onclick="showSlide(4)"></span>
+
+<span class="gallery-dot"
+onclick="showSlide(5)"></span>
+
+</div>
+
+</section>
 
 <!-- =========================================================
      CONTACT
@@ -1835,6 +1950,99 @@
     ⌂ Home
 
 </a>
+
+<!-- GALLERY SLIDESHOW JAVASCRIPT -->
+
+<script>
+
+let currentSlide = 0;
+
+const slides = document.querySelectorAll(".gallery-slide");
+
+const dots = document.querySelectorAll(".gallery-dot");
+
+let autoSlide;
+
+
+function showSlide(index){
+
+if(index >= slides.length){
+
+currentSlide = 0;
+
+}
+
+else if(index < 0){
+
+currentSlide = slides.length - 1;
+
+}
+
+else{
+
+currentSlide = index;
+
+}
+
+
+slides.forEach(function(slide){
+
+slide.classList.remove("active");
+
+});
+
+
+dots.forEach(function(dot){
+
+dot.classList.remove("active");
+
+});
+
+
+slides[currentSlide].classList.add("active");
+
+dots[currentSlide].classList.add("active");
+
+}
+
+
+/* NEXT / PREVIOUS */
+
+function changeSlide(direction){
+
+currentSlide += direction;
+
+showSlide(currentSlide);
+
+resetAutoSlide();
+
+}
+
+
+/* AUTOMATIC SLIDESHOW */
+
+function resetAutoSlide(){
+
+clearInterval(autoSlide);
+
+autoSlide = setInterval(function(){
+
+currentSlide++;
+
+showSlide(currentSlide);
+
+},8000);
+
+}
+
+
+/* START SLIDESHOW */
+
+showSlide(0);
+
+resetAutoSlide();
+
+</script>
 
 
 </body>
